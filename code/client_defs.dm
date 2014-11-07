@@ -1,0 +1,1 @@
+var/next_allowed_topic_time = 1 //used for spam protection (as if somebody could ninja off a click 1/10th of a second into world start)

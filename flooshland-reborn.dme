@@ -1,0 +1,44 @@
+
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+#define FILE_DIR "icons"
+#define FILE_DIR "icons/area"
+#define FILE_DIR "icons/mob"
+#define FILE_DIR "icons/obj"
+#define FILE_DIR "icons/turf"
+#define FILE_DIR "sounds"
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+#include "code\action_carrier.dm"
+#include "code\char_setup.dm"
+#include "code\click_mgr.dm"
+#include "code\client_defs.dm"
+#include "code\client_href.dm"
+#include "code\core.dm"
+#include "code\helper_procs.dm"
+#include "code\login.dm"
+#include "code\sd_DynamicAreaLighting.dm"
+#include "code\world.dm"
+#include "code\.dmf"
+#include "code\areas\areas.dm"
+#include "code\controllers\controller.dm"
+#include "code\datums\appearances_human.dm"
+#include "code\mobs\ghost.dm"
+#include "code\mobs\health.dm"
+#include "code\mobs\human.dm"
+#include "code\mobs\interface.dm"
+#include "code\mobs\mob_defs.dm"
+#include "code\mobs\mobcode.dm"
+#include "code\mobs\movement.dm"
+#include "code\mobs\overlays.dm"
+#include "code\objs\clothes.dm"
+#include "code\objs\dirs.dm"
+#include "code\objs\effects.dm"
+#include "code\objs\guiobjs.dm"
+#include "code\objs\obj_code.dm"
+#include "code\objs\obj_defs.dm"
+// END_INCLUDE
