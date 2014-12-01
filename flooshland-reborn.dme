@@ -13,6 +13,7 @@
 // BEGIN_PREFERENCES
 // END_PREFERENCES
 // BEGIN_INCLUDE
+#include "world1.dmm"
 #include "code\action_carrier.dm"
 #include "code\char_setup.dm"
 #include "code\click_mgr.dm"
@@ -27,9 +28,9 @@
 #include "code\areas\areas.dm"
 #include "code\controllers\controller.dm"
 #include "code\datums\appearances_human.dm"
+#include "code\mobs\floosh.dm"
 #include "code\mobs\ghost.dm"
 #include "code\mobs\health.dm"
-#include "code\mobs\human.dm"
 #include "code\mobs\interface.dm"
 #include "code\mobs\mob_defs.dm"
 #include "code\mobs\mobcode.dm"
@@ -41,4 +42,5 @@
 #include "code\objs\guiobjs.dm"
 #include "code\objs\obj_code.dm"
 #include "code\objs\obj_defs.dm"
+#include "code\turf\terrain.dm"
 // END_INCLUDE
