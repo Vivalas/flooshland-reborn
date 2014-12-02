@@ -1,11 +1,11 @@
-mob/standard/human
-	name = "Human"
-	desc = "The most mundane of creatures!"
+mob/standard/floosh
+	name = "Floosh"
+	desc = "A rotund yellow creature with amazing abilities!"
 	icon = 'human.dmi'
 	icon_state = "up"
 	melee_dmg = 5
-	start_x = 61
-	start_y = 39
+	start_x = 100
+	start_y = 100
 	start_z = 1
 	var/list/hud_objs = list()
 

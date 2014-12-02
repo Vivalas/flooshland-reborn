@@ -76,7 +76,7 @@ datum/preferences/proc/PreviewIcon()   //creates that nifty little preview icon
 
 datum/preferences/proc/FinishSetup() //finishes setup and compiles the mob with the chosen appearance
 	usr << sound(null,channel=1) //turns off the lobby music
-	var/mob/standard/human/M = new
+	var/mob/standard/floosh/M = new
 	var/datum/appearance/hair/D = new h_style:type
 	D.CreateHair(M,h_color)
 	var/datum/appearance/eyes/E = new(M)

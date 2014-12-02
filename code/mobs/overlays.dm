@@ -22,14 +22,14 @@ mob/proc/Invert_Remove_Overlays(obj/game/O)
 		I = new('overlays.dmi',"[O.icon_state]_l")
 	overlays -= I
 
-mob/proc/Add_Clothes_Overlays(obj/game/clothes/O)
+mob/proc/Add_Clothes_Overlays(obj/game/item/O)
 	var/obj/overlays/I = new
 	I.icon = 'clothes.dmi'
 	I.icon_state = "[O.icon_state]"
 	I.layer = O.ov_layer
 	overlays += I
 
-mob/proc/Remove_Clothes_Overlays(obj/game/clothes/O)
+mob/proc/Remove_Clothes_Overlays(obj/game/item/O)
 	var/obj/overlays/I = new
 	I.icon = 'clothes.dmi'
 	I.icon_state = "[O.icon_state]"
