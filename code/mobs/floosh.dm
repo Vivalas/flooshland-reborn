@@ -4,8 +4,13 @@ mob/standard/floosh
 	icon = 'human.dmi'
 	icon_state = "up"
 	melee_dmg = 5
+<<<<<<< HEAD
 	start_x = 100
 	start_y = 100
+=======
+	start_x = 61
+	start_y = 39
+>>>>>>> origin/master
 	start_z = 1
 	var/list/hud_objs = list()
 
@@ -63,7 +68,11 @@ mob/standard/floosh
 			src.client.screen += O
 			AddOverlays(O)
 
+<<<<<<< HEAD
 	UpdateInv(obj/game/item/O,obj/gui/inv/inv_slot)
+=======
+	UpdateInv(obj/game/clothes/O,obj/gui/inv/inv_slot)
+>>>>>>> origin/master
 		for(var/obj/gui/G in src.client.screen)
 			if(G.type == inv_slot.type)
 				O.screen_loc = G.screen_loc
