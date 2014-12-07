@@ -1,8 +1,11 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
+WINDOW: code\datums\magicks.dm;code\mobs\interface.dm
 LAST_COMPILE_VERSION: 506.1247
-LAST_COMPILE_TIME: 1415404492
+DIR: code code\datums code\mobs 
+FILE: code\datums\magicks.dm
+LAST_COMPILE_TIME: 1417956833
 AUTO_FILE_DIR: ON
 */
 // END_INTERNALS

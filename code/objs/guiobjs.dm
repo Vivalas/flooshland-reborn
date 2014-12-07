@@ -29,7 +29,7 @@ obj/gui/expand
 			usr.Del_Gui_Inv()
 			icon_state = "expand2"
 			state = 0
-			for(var/obj/game/clothes/O in usr.client.screen)
+			for(var/obj/game/item/O in usr.client.screen)
 				if(O.worn)
 					O.invisibility = 101
 		else
@@ -119,11 +119,11 @@ obj/gui/stat/stop_pull
 	Click()
 		if(!usr.pulling)
 			return
-		usr.s_pull(src)
+		usr.s_pull(usr.pulling)
 
 obj/gui/inv
 	Click()
-		var/obj/game/clothes/O = usr.Get_Active_Hand()
+		var/obj/game/item/O = usr.Get_Active_Hand()
 		if(!O)
 			return
 		O.equip(O,src)

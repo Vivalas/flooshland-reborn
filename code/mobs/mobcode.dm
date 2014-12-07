@@ -3,6 +3,8 @@ var/list/mobs() = list()
 mob
 	New()
 		mobs += src
+		organs = new/datum/organs
+		organs.organs += starting_organs
 	Del()
 		mobs -= src
 
@@ -158,7 +160,7 @@ mob/proc/Remove_Active_Hand()
 
 mob/proc/UnarmedAttack(mob/M)
 	view(src) << "\red\bold [src] [attack_verb] [M]!"
-	M.brute += melee_dmg
+	M.blunt += melee_dmg
 	new/obj/effect/blood(M.loc)
 	viewers(src) << 'punch3.ogg'
 

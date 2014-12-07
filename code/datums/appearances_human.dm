@@ -15,7 +15,7 @@ datum/appearance //used for all overlays for character customization
 
 	skin //used for skin color
 
-	proc/ManageList(mob/standard/human/H) //deleted multiple appearances of the same type in a mob
+	proc/ManageList(mob/standard/floosh/H) //deleted multiple appearances of the same type in a mob
 		for(var/datum/appearance/D in H.appearance)
 			if(D == src)
 				continue
@@ -34,7 +34,7 @@ datum/appearance //used for all overlays for character customization
 
 
 datum/appearance/hair
-	proc/CreateHair(mob/standard/human/M,h_color) //Adds a hair style to a human and colors it.
+	proc/CreateHair(mob/standard/floosh/M,h_color) //Adds a hair style to a human and colors it.
 		owner = M
 		color = h_color
 		M.appearance += src
@@ -71,15 +71,15 @@ datum/appearance/hair
 		name = "Ponytail"
 		icon_s = "ponytail_h"
 
-	ponytail_2
-		name = "Ragged Ponytail"
-		icon_s = "ponytail_2_h"
+//	ponytail_2
+//		name = "Ragged Ponytail"
+//		icon_s = "ponytail_2_h"
 
 
 datum/appearance/eyes
 	var/color
 
-	proc/CreateEyes(mob/standard/human/M,e_color)
+	proc/CreateEyes(mob/standard/floosh/M,e_color)
 		owner = M
 		color = e_color
 		name = "[e_color] Eyes"
@@ -104,7 +104,7 @@ datum/appearance/eyes
 datum/appearance/skin
 	var/color
 
-	proc/CreateSkin(mob/standard/human/M,s_color)
+	proc/CreateSkin(mob/standard/floosh/M,s_color)
 		owner = M
 		color = s_color
 		name = "[s_color] Skin"

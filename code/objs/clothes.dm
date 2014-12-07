@@ -8,8 +8,9 @@
 #define BACK_LAYER = 7
 #define MASK_LAYER = 5
 
-obj/game/clothes
-	icon = 'clothing.dmi'
+
+//for flooshland as well as Sojorun I want to implement a system where all items have the posibility of being worn, not just "clothes"
+obj/game/item
 	var/heat_res
 	var/rad_res
 	var/cold_res
@@ -20,7 +21,7 @@ obj/game/clothes
 			unequip()
 		else ..()
 
-	proc/equip(obj/game/clothes/O,obj/gui/inv/inv_slot)
+	proc/equip(obj/game/item/O,obj/gui/inv/inv_slot)
 		if(!usr.ChkUse())
 			return
 		if(slot != inv_slot.name)
@@ -44,23 +45,23 @@ obj/game/clothes
 		usr.Remove_Clothes_Overlays(src)
 		usr.UpdateAct(src)
 
-obj/game/clothes/blue_suit
+/*obj/game/item/blue_suit
 	name = "Blue Suit"
 	icon_state = "blue_suit"
 	slot = "shirt"
 	ov_layer = 5
 
-obj/game/clothes/security_suit
+obj/game/item/security_suit
 	name = "Security Uniform"
 	icon_state = "security_suit"
 	slot = "shirt"
 	ov_layer = 5
 
 
-obj/game/clothes/marine_boots
+obj/game/item/marine_boots
 	name = "Marine Boots"
 	icon_state = "marine_boots"
 	slot = "shoes"
-	ov_layer = 7
+	ov_layer = 7 */
 
 

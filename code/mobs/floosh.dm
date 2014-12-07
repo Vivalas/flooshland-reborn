@@ -1,11 +1,13 @@
-mob/standard/human
-	name = "Human"
-	desc = "The most mundane of creatures!"
+mob/standard/floosh
+	name = "Floosh"
+	desc = "A rotund yellow creature with amazing abilities!"
 	icon = 'human.dmi'
 	icon_state = "up"
+	crucial_organs = newlist(/datum/organ/brain)
+	starting_organs = newlist(/datum/organ/brain, /datum/organ/heart)
 	melee_dmg = 5
-	start_x = 61
-	start_y = 39
+	start_x = 100
+	start_y = 100
 	start_z = 1
 	var/list/hud_objs = list()
 
@@ -80,9 +82,9 @@ mob/standard/human
 		if(!key)
 			return
 		for(var/obj/gui/stat/status/S in src.client.screen)
-			var/health = 100 - (oxy + tox + brute + burn)
+			var/health = 100 - (blunt+tissue+toxic)
 			switch(health)
-				if(100)
+				if(100 to 10e3^1000000000000000000000000000000)
 					S.icon_state = "100"
 				if(60 to 99)
 					S.icon_state = "high"
@@ -94,6 +96,8 @@ mob/standard/human
 					S.icon_state = "crit"
 				else
 					S.icon_state = "dead"
+			if(dead)
+				S.icon_state = "dead"
 
 
 //END GUI DEFINES

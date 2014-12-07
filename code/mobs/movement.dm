@@ -22,13 +22,14 @@ obj/game/Bumped(mob/M)
 mob/proc/s_pull(atom/movable/M)
 	if(M == src)
 		return
-	if(!istype(M,/obj/game))
+	if(!(istype(M,/obj/game)||istype(M,/mob)))
 		return
 	if(istype(M,/obj/game))
 		if(M:weld)
 			return
 		if(M in src)
 			return
+
 	if(!ChkActive())
 		return
 	if(!pulling in view(1))
