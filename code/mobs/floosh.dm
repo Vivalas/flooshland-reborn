@@ -3,11 +3,22 @@ mob/standard/floosh
 	desc = "A rotund yellow creature with amazing abilities!"
 	icon = 'human.dmi'
 	icon_state = "up"
+<<<<<<< HEAD
 	crucial_organs = newlist(/datum/organ/brain)
 	starting_organs = newlist(/datum/organ/brain, /datum/organ/heart)
 	melee_dmg = 5
 	start_x = 100
 	start_y = 100
+=======
+	melee_dmg = 5
+<<<<<<< HEAD
+	start_x = 100
+	start_y = 100
+=======
+	start_x = 61
+	start_y = 39
+>>>>>>> origin/master
+>>>>>>> origin/master
 	start_z = 1
 	var/list/hud_objs = list()
 
@@ -65,7 +76,15 @@ mob/standard/floosh
 			src.client.screen += O
 			AddOverlays(O)
 
+<<<<<<< HEAD
 	UpdateInv(obj/game/item/O,obj/gui/inv/inv_slot)
+=======
+<<<<<<< HEAD
+	UpdateInv(obj/game/item/O,obj/gui/inv/inv_slot)
+=======
+	UpdateInv(obj/game/clothes/O,obj/gui/inv/inv_slot)
+>>>>>>> origin/master
+>>>>>>> origin/master
 		for(var/obj/gui/G in src.client.screen)
 			if(G.type == inv_slot.type)
 				O.screen_loc = G.screen_loc
@@ -82,9 +101,15 @@ mob/standard/floosh
 		if(!key)
 			return
 		for(var/obj/gui/stat/status/S in src.client.screen)
+<<<<<<< HEAD
 			var/health = 100 - (blunt+tissue+toxic)
 			switch(health)
 				if(100 to 10e3^1000000000000000000000000000000)
+=======
+			var/health = 100 - (oxy + tox + brute + burn)
+			switch(health)
+				if(100)
+>>>>>>> origin/master
 					S.icon_state = "100"
 				if(60 to 99)
 					S.icon_state = "high"
@@ -96,8 +121,11 @@ mob/standard/floosh
 					S.icon_state = "crit"
 				else
 					S.icon_state = "dead"
+<<<<<<< HEAD
 			if(dead)
 				S.icon_state = "dead"
+=======
+>>>>>>> origin/master
 
 
 //END GUI DEFINES

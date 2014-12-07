@@ -2,8 +2,11 @@ world
 	loop_checks  = 0
 	mob = /mob/other/new_player
 	turf = /turf/floor/grass
+<<<<<<< HEAD
 
 world/New()
+=======
+>>>>>>> origin/master
 
 	new/datum/controller/master_controller
 	sleep(1)

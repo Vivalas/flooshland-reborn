@@ -29,10 +29,14 @@
 #include "code\areas\areas.dm"
 #include "code\controllers\controller.dm"
 #include "code\datums\appearances_human.dm"
+<<<<<<< HEAD
 #include "code\datums\help_lib.dm"
 #include "code\datums\magicks.dm"
 #include "code\mobs\floosh.dm"
 #include "code\mobs\floosh_organs.dm"
+=======
+#include "code\mobs\floosh.dm"
+>>>>>>> origin/master
 #include "code\mobs\ghost.dm"
 #include "code\mobs\health.dm"
 #include "code\mobs\interface.dm"
@@ -46,7 +50,10 @@
 #include "code\objs\guiobjs.dm"
 #include "code\objs\obj_code.dm"
 #include "code\objs\obj_defs.dm"
+<<<<<<< HEAD
 #include "code\objs\organs.dm"
 #include "code\turf\structure.dm"
+=======
+>>>>>>> origin/master
 #include "code\turf\terrain.dm"
 // END_INCLUDE
